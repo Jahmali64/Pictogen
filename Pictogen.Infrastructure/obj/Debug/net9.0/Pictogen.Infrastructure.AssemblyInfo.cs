@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pictogen.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0437b96166c34164fde580f4e14c40d4bb70f21")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64488fbf608ef0afb14e2e2d4e16c06256453a4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pictogen.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pictogen.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
