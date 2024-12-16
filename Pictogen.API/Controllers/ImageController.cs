@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Pictogen.Application.Services;
 using Pictogen.Application.ViewModels;
 
 namespace Pictogen.API.Controllers;
 
 [ApiController]
+[Authorize]
 public sealed class ImageController(IImageService imageService) : ControllerBase {
     
     [HttpGet("api/images/{id:int}")]
