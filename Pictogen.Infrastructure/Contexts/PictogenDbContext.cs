@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Pictogen.Infrastructure.Contexts;
 
-public class PictogenDbContext : DbContext {
+public class PictogenDbContext(DbContextOptions<PictogenDbContext> options) : DbContext(options) {
     public DbSet<Image> Images { get; set; }
-    
-    public PictogenDbContext(DbContextOptions<PictogenDbContext> options) : base(options) { }
 }

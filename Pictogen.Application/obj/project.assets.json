@@ -1161,6 +1161,7 @@
       "packagesPath": "C:\\Users\\jahma\\.nuget\\packages\\",
       "outputPath": "C:\\Code\\Pictogen\\Pictogen.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -1199,8 +1200,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net9.0": {

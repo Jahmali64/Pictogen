@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pictogen.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbe03a15b3c47b7124c24cc10f13c0fe35993183")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+282c5ebdfe8d837729c2d7b851a5c0c1bc3da046")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pictogen.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pictogen.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
