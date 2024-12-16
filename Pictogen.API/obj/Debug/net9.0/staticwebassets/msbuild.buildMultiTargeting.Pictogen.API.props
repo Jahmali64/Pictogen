@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Pictogen.API.props" />
+</Project>

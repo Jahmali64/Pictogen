@@ -1,0 +1,12 @@
+C:\Code\Pictogen\Pictogen.Domain\bin\Debug\net9.0\Pictogen.Domain.deps.json
+C:\Code\Pictogen\Pictogen.Domain\bin\Debug\net9.0\Pictogen.Domain.dll
+C:\Code\Pictogen\Pictogen.Domain\bin\Debug\net9.0\Pictogen.Domain.pdb
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\Pictogen.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\Pictogen.Domain.AssemblyInfoInputs.cache
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\Pictogen.Domain.AssemblyInfo.cs
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\Pictogen.Domain.csproj.CoreCompileInputs.cache
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\Pictogen.Domain.sourcelink.json
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\Pictogen.Domain.dll
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\refint\Pictogen.Domain.dll
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\Pictogen.Domain.pdb
+C:\Code\Pictogen\Pictogen.Domain\obj\Debug\net9.0\ref\Pictogen.Domain.dll
