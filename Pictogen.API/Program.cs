@@ -1,3 +1,6 @@
+using Pictogen.Application;
+using Pictogen.Infrastructure;
+
 namespace Pictogen.API;
 
 public static class Program {
@@ -5,39 +8,31 @@ public static class Program {
         WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
-        builder.Services.AddAuthorization();
+        builder.Services.AddApplication();
+        builder.Services.AddInfrastructure(builder.Configuration);
+        builder.Services.AddHttpContextAccessor();
+        builder.Services.AddScoped(typeof(CancellationToken), serviceProvider => {
+            IHttpContextAccessor httpContext = serviceProvider.GetRequiredService<IHttpContextAccessor>();
+            return httpContext.HttpContext?.RequestAborted ?? CancellationToken.None;
+        });
 
-        // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-        builder.Services.AddOpenApi();
+        builder.Services.AddControllers();
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen();
 
         WebApplication app = builder.Build();
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment()) {
-            app.MapOpenApi();
+            app.UseSwagger();
+            app.UseSwaggerUI();
         }
 
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
-
-        var summaries
-            = new[] {
-                        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-                    };
-
-        app.MapGet("/weatherforecast"
-                   , (HttpContext httpContext) => {
-                         var forecast
-                             = Enumerable.Range(1, 5)
-                                         .Select(index =>
-                                                     new WeatherForecast {
-                                                                             Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)), TemperatureC = Random.Shared.Next(-20, 55), Summary = summaries[Random.Shared.Next(summaries.Length)]
-                                                                         })
-                                         .ToArray();
-                         return forecast;
-                     })
-           .WithName("GetWeatherForecast");
+        
+        app.MapControllers();
 
         app.Run();
     }
