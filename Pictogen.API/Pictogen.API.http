@@ -1,0 +1,6 @@
+@Pictogen.API_HostAddress = http://localhost:5041
+
+GET {{Pictogen.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
